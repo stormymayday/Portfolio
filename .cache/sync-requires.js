@@ -11,6 +11,7 @@ exports.components = {
   "component---src-pages-blog-js": hot(preferDefault(require("/Users/aidar/Desktop/projects/Portfolio/src/pages/blog.js"))),
   "component---src-pages-contact-js": hot(preferDefault(require("/Users/aidar/Desktop/projects/Portfolio/src/pages/contact.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/aidar/Desktop/projects/Portfolio/src/pages/index.js"))),
-  "component---src-pages-projects-js": hot(preferDefault(require("/Users/aidar/Desktop/projects/Portfolio/src/pages/projects.js")))
+  "component---src-pages-projects-js": hot(preferDefault(require("/Users/aidar/Desktop/projects/Portfolio/src/pages/projects.js"))),
+  "component---src-pages-resume-js": hot(preferDefault(require("/Users/aidar/Desktop/projects/Portfolio/src/pages/resume.js")))
 }
 
