@@ -13,6 +13,8 @@ export default () => {
 	return (
 		<Layout>
 			<Hero />
+			{/* <Services /> */}
+			<Jobs />
 		</Layout>
 	);
 };
