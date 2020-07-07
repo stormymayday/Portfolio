@@ -9,13 +9,38 @@ import Blogs from '../components/Blogs';
 /* Image
   
  */
-export default () => {
+export default ({ data }) => {
+	const { allStrapiProjects: { nodes: projects } } = data;
 	return (
 		<Layout>
 			<Hero />
-			{/* <Services /> */}
 			<Jobs />
+			<Projects projects={projects} title="featured projects" showLink />
 		</Layout>
 	);
 };
-// ...GatsbyImageSharpFluid
+
+export const query = graphql`
+	{
+		allStrapiProjects(filter: { featured: { eq: true } }, sort: { fields: strapiId, order: DESC }) {
+			nodes {
+				github
+				id
+				description
+				title
+				url
+				image {
+					childImageSharp {
+						fluid {
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
+				stack {
+					id
+					title
+				}
+			}
+		}
+	}
+`;
