@@ -6,10 +6,10 @@
 
 module.exports = {
 	siteMetadata: {
-		title: 'Portfolio',
-		description: 'This is a portfolio website',
-		author: '@aidar',
-		siteUrl: 'https://aaidar.dev'
+		title: 'Aidar',
+		description: 'Hello and welcome to my portfolio website!',
+		author: 'Aidar',
+		siteUrl: 'https://www.aaidar.dev'
 	},
 	plugins: [
 		`gatsby-transformer-sharp`,

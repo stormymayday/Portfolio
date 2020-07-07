@@ -3,11 +3,13 @@ import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 import Title from '../components/Title';
 import Image from 'gatsby-image';
+import SEO from '../components/SEO';
 // ...GatsbyImageSharpFluid
 const About = ({ data: { about: { nodes } } }) => {
 	const { info, stack, title } = nodes[0];
 	return (
 		<Layout>
+			<SEO title="About" description="about me" />
 			<section className="about-page">
 				<div className="section-center">
 					<article className="about-text">
