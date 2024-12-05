@@ -1,6 +1,7 @@
 import Image from "next/image";
 import heroSvg from "@/public/hero.svg";
 import SocialLinks from "@/constants/socialLinks";
+import Link from "next/link";
 
 const Hero = () => {
     return (
@@ -10,10 +11,9 @@ const Hero = () => {
                     <div className="underline"></div>
                     <h1>i&apos;m aidar</h1>
                     <h4>software engineer</h4>
-                    <a href="contact.html" className="btn hero-btn">
-                        contact me
-                    </a>
-
+                    <Link href="/contact">
+                        <button className="btn hero-btn">contact me</button>
+                    </Link>
                     <SocialLinks />
                 </article>
                 <article className="hero-img">
