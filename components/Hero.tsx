@@ -1,5 +1,6 @@
 import Image from "next/image";
 import heroSvg from "@/public/hero.svg";
+import SocialLinks from "@/constants/socialLinks";
 
 const Hero = () => {
     return (
@@ -13,29 +14,8 @@ const Hero = () => {
                         contact me
                     </a>
 
-                    <ul className="social-icons hero-icons">
-                        <li>
-                            <a
-                                href="https://www.linkedin.com/in/aidar-assylbekov/"
-                                className="social-icon"
-                                target="_blank"
-                            >
-                                <i className="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a
-                                href="https://github.com/stormymayday"
-                                className="social-icon"
-                                target="_blank"
-                            >
-                                <i className="fab fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <SocialLinks />
                 </article>
-
                 <article className="hero-img">
                     <Image
                         src={heroSvg}

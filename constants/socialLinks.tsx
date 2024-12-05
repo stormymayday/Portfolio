@@ -7,7 +7,7 @@ const data = [
     {
         id: 2,
         icon: <FaLinkedin className="social-icon" />,
-        url: "https://www.linkedin.com/in/yourusername",
+        url: "https://www.linkedin.com/in/aidar-assylbekov/",
     },
     {
         id: 6,
