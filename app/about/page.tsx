@@ -1,8 +1,6 @@
 import Layout from "@/components/Layout";
 import Title from "@/components/Title";
 import Image from "next/image";
-
-// import { aboutData } from "../data/aboutData"; // Import local data
 import { aboutData } from "@/constants/about";
 
 const About = () => {
@@ -12,7 +10,6 @@ const About = () => {
         <Layout>
             <section className="about-page">
                 <div className="section-center about-center">
-                    {/* Next.js Image component */}
                     <div className="about-img">
                         <Image
                             src={image.url}
@@ -36,12 +33,5 @@ const About = () => {
         </Layout>
     );
 };
-
-// Using getStaticProps to pass the local data
-// export async function getStaticProps() {
-//     return {
-//         props: { aboutData }, // Pass local data to the page component
-//     };
-// }
 
 export default About;
