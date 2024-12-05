@@ -14,7 +14,8 @@ export interface Job {
 const jobsData: Job[] = [
     {
         id: 1,
-        company: "International Development Enterprises",
+        // company: "International Development Enterprises",
+        company: "iDE Global",
         date: "Apr 2021 - Apr 2023",
         position: "Software Engineer",
         desc: [
@@ -38,7 +39,8 @@ const jobsData: Job[] = [
     },
     {
         id: 2,
-        company: "International Development Enterprises",
+        // company: "International Development Enterprises",
+        company: "iDE Global",
         date: "Aug 2020 - Mar 2021",
         position: "Software Engineer Intern",
         desc: [

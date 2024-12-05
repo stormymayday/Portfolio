@@ -562,6 +562,7 @@ Jobs
     border-color: transparent;
     text-transform: capitalize;
     font-size: 1.25rem;
+    /* font-size: 0.75rem; */
     letter-spacing: var(--spacing);
     margin: 0 0.5rem;
     transition: var(--transition);

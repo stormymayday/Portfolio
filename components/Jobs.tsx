@@ -24,7 +24,7 @@ const Jobs = () => {
                                 index === value ? "active-btn" : ""
                             }`}
                         >
-                            {item.position}
+                            {item.company}
                         </button>
                     ))}
                 </div>
