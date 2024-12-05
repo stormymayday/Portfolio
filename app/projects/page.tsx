@@ -3,7 +3,7 @@ import Title from "@/components/Title";
 import Project from "@/components/Project";
 import { projectsData } from "@/constants/projects";
 
-const About = () => {
+const Projects = () => {
     return (
         <Layout>
             <header className="projects-hero">
@@ -21,4 +21,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Projects;
