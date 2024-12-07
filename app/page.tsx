@@ -5,17 +5,21 @@ import FeaturedProjects from "@/components/FeaturedProjects";
 import { fetchProjects } from "@/utils/fetchProjects";
 export default async function Home() {
     const projects = await fetchProjects();
-    console.log(projects);
+    const featuredProjects = projects.filter((project) => {
+        return project.featured === true;
+    });
 
     return (
         <main>
             <Layout>
                 <Hero />
                 <Jobs />
-                <FeaturedProjects
-                    projects={projects}
-                    title="featured projects"
-                />
+                {featuredProjects.length > 0 && (
+                    <FeaturedProjects
+                        projects={featuredProjects}
+                        title="featured projects"
+                    />
+                )}
             </Layout>
         </main>
     );
