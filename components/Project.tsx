@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaHome } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { ProjectType } from "@/types";
 
 interface ProjectProps {
@@ -12,14 +12,16 @@ const Project = ({ project }: ProjectProps) => {
     return (
         <article className="single-project">
             <div className="project-container">
-                <Image
-                    src={`https:${image.url}`}
-                    alt={title}
-                    width={image.width}
-                    height={image.height}
-                />
-                <a href={liveUrl} className="project-icon" target="_blank">
-                    <FaHome />
+                <a href={liveUrl} target="_blank">
+                    <Image
+                        src={`https:${image.url}`}
+                        alt={title}
+                        width={image.width}
+                        height={image.height}
+                    />
+                </a>
+                <a href={githubUrl} className="project-icon" target="_blank">
+                    <FaGithub />
                 </a>
             </div>
             <div className="project-details">
@@ -29,14 +31,6 @@ const Project = ({ project }: ProjectProps) => {
                     {stack.map((item, index) => (
                         <span key={index}>{item}</span>
                     ))}
-                </div>
-                <div className="project-footer">
-                    <a href={githubUrl} target="_blank">
-                        <i className="fab fa-github"></i>
-                    </a>
-                    <a href={liveUrl} target="_blank">
-                        <i className="fa-solid fa-share-from-square"></i>
-                    </a>
                 </div>
             </div>
         </article>
