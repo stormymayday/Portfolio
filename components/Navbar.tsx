@@ -12,7 +12,7 @@ const Navbar = ({ toggleSidebar }: NavbarProps) => {
             <div className="nav-center">
                 <div className="nav-header">
                     <Link href="/" className="nav-logo">
-                        aidar<span>Dev</span>
+                        ai<span>dar</span>
                     </Link>
                     <button
                         type="button"
