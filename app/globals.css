@@ -196,12 +196,11 @@ p {
     margin-top: 2rem;
     width: 15rem;
     display: flex;
-    justify-content: center;
+    gap: 0.5rem;
 }
 
 .social-link {
-    font-size: 1.75rem;
-    margin-right: 0.5rem;
+    font-size: 2.5rem;
     color: var(--clr-grey-1);
     transition: var(--transition);
 }
@@ -709,12 +708,12 @@ Projects
 
 .project-links {
     display: flex;
+    gap: 0.5rem;
 }
 
 .featured-project-icon {
     color: var(--clr-primary-5);
-    font-size: 1.25rem;
-    margin-right: 0.5rem;
+    font-size: 2.5rem;
     transition: var(--transition);
 }
 .project-icon:hover {
