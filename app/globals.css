@@ -459,7 +459,7 @@ Hero
     margin-top: 1.25rem;
 }
 .hero-btn {
-    padding: 0.375rem 1rem;
+    padding: 0.375rem 1.1rem;
 }
 
 @media screen and (min-width: 992px) {
