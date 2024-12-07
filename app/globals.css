@@ -197,6 +197,7 @@ p {
     width: 15rem;
     display: flex;
     gap: 0.5rem;
+    justify-content: center;
 }
 
 .social-link {
@@ -456,6 +457,9 @@ Hero
 }
 .hero .btn {
     margin-top: 1.25rem;
+}
+.hero-btn {
+    padding: 0.375rem 1rem;
 }
 
 @media screen and (min-width: 992px) {
