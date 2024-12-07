@@ -1,25 +1,24 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { FaHome } from "react-icons/fa";
+import { ProjectType } from "@/types";
 
 interface ProjectProps {
-    project: {
-        title: string;
-        description: string;
-        stack: string[];
-        imageUrl: StaticImageData;
-        demoUrl: string;
-        githubUrl: string;
-    };
+    project: ProjectType;
 }
 
 const Project = ({ project }: ProjectProps) => {
-    const { title, description, stack, imageUrl, demoUrl, githubUrl } = project;
+    const { title, description, stack, image, liveUrl, githubUrl } = project;
 
     return (
         <article className="single-project">
             <div className="project-container">
-                <Image src={imageUrl} alt={title} width={500} height={300} />
-                <a href={demoUrl} className="project-icon" target="_blank">
+                <Image
+                    src={`https:${image.url}`}
+                    alt={title}
+                    width={image.width}
+                    height={image.height}
+                />
+                <a href={liveUrl} className="project-icon" target="_blank">
                     <FaHome />
                 </a>
             </div>
@@ -35,7 +34,7 @@ const Project = ({ project }: ProjectProps) => {
                     <a href={githubUrl} target="_blank">
                         <i className="fab fa-github"></i>
                     </a>
-                    <a href={demoUrl} target="_blank">
+                    <a href={liveUrl} target="_blank">
                         <i className="fa-solid fa-share-from-square"></i>
                     </a>
                 </div>

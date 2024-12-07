@@ -1,9 +1,11 @@
 import Layout from "@/components/Layout";
 import Title from "@/components/Title";
 import Project from "@/components/Project";
-import { projectsData } from "@/constants/projects";
+import { fetchProjects } from "@/utils/fetchProjects";
 
-const Projects = () => {
+const Projects = async () => {
+    const projects = await fetchProjects();
+    console.log(projects);
     return (
         <Layout>
             <header className="projects-hero">
@@ -12,7 +14,7 @@ const Projects = () => {
 
             <section className="section">
                 <div className="section-center projects-page-center">
-                    {projectsData.map((project, index) => (
+                    {projects.map((project, index) => (
                         <Project key={index} project={project} />
                     ))}
                 </div>
