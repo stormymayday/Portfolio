@@ -645,7 +645,8 @@ Projects
 .featured-project-img {
     border-top-left-radius: var(--radius);
     border-top-right-radius: var(--radius);
-    height: 19rem;
+    /* height: 19rem; */
+    /* height: 11rem; */
     z-index: 1;
 }
 .featured-project-img::after {
@@ -717,12 +718,12 @@ Projects
 }
 @media screen and (min-width: 576px) {
     .featured-project-img {
-        height: 19rem;
+        /* height: 19rem; */
     }
 }
 @media screen and (min-width: 768px) {
     .featured-project-img {
-        height: 22rem;
+        /* height: 22rem; */
     }
 }
 @media screen and (min-width: 992px) {
