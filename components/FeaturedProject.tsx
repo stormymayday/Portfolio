@@ -12,7 +12,11 @@ const Project = ({ index, project }: ProjectProps) => {
     return (
         <article className="project">
             {image && (
-                <a href={liveUrl} target="_blank">
+                <a
+                    href={liveUrl}
+                    target="_blank"
+                    className="featured-project-img-wrapper"
+                >
                     <Image
                         src={`https:${image.url}`}
                         alt={title}
