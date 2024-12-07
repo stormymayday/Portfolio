@@ -12,13 +12,15 @@ const Project = ({ index, project }: ProjectProps) => {
     return (
         <article className="project">
             {image && (
-                <Image
-                    src={`https:${image.url}`}
-                    alt={title}
-                    width={image.width}
-                    height={image.height}
-                    className="featured-project-img"
-                />
+                <a href={liveUrl} target="_blank">
+                    <Image
+                        src={`https:${image.url}`}
+                        alt={title}
+                        width={image.width}
+                        height={image.height}
+                        className="featured-project-img"
+                    />
+                </a>
             )}
             <div className="project-info">
                 <span className="project-number">0{index + 1}.</span>
