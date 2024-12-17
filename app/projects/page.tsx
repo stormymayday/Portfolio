@@ -5,7 +5,7 @@ import { fetchProjects } from "@/utils/fetchProjects";
 
 const Projects = async () => {
     const projects = await fetchProjects();
-    console.log(projects);
+    // console.log(projects);
     return (
         <Layout>
             <header className="projects-hero">

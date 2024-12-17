@@ -25,8 +25,10 @@ const Project = ({ project }: ProjectProps) => {
                 </a>
             </div>
             <div className="project-details">
-                <h4>{title}</h4>
-                <p>{description}</p>
+                <div className="project-details-content">
+                    <h4>{title}</h4>
+                    <p>{description}</p>
+                </div>
                 <div className="project-stack">
                     {stack.map((item, index) => (
                         <span key={index}>{item}</span>
